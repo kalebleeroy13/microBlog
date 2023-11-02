@@ -1,0 +1,106 @@
+2023-10-30 19:20:50,619 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-10-31 12:39:18,561 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-01 12:24:51,026 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-01 12:29:52,790 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-01 12:36:24,478 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-01 13:07:35,534 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-01 23:00:09,283 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-01 23:34:55,340 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-01 23:35:38,285 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-02 00:26:41,482 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-02 00:40:42,566 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-02 22:55:22,866 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-02 23:56:27,579 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-02 23:57:22,945 ERROR: Exception on /user/susan [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+Traceback (most recent call last):
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 80, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/user.html", line 17, in template
+    <p><a href="{{ url_for('unfollow', username=user.username) }}"> Unfollow</a></p>
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got 'unfollow'
+2023-11-02 23:59:29,783 ERROR: Exception on /user/susan [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+Traceback (most recent call last):
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 80, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/user.html", line 17, in template
+    <p><a href="{{ url_for('unfollow', username=user.username) }}"> Unfollow</a></p>
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got 'unfollow'
+2023-11-02 23:59:35,100 ERROR: Exception on /user/susan [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+Traceback (most recent call last):
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 80, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/user.html", line 17, in template
+    <p><a href="{{ url_for('unfollow', username=user.username) }}"> Unfollow</a></p>
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got 'unfollow'

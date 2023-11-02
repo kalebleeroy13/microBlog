@@ -1,2 +1,17 @@
-2023-10-30 19:20:50,619 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
-2023-10-31 12:39:18,561 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-03 00:04:36,829 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-03 00:06:15,188 ERROR: Exception on /follow/kale [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+Traceback (most recent call last):
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 112, in follow
+    return redirect(url_for('user', username))
+TypeError: url_for() takes 1 positional argument but 2 were given
+2023-11-03 00:10:20,773 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
