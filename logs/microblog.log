@@ -1,5 +1,4 @@
-2023-11-03 00:04:36,829 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
-2023-11-03 00:06:15,188 ERROR: Exception on /follow/kale [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+2023-11-04 14:35:24,345 ERROR: Exception on /explore [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
 Traceback (most recent call last):
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
     response = self.full_dispatch_request()
@@ -11,57 +10,7 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
     return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 112, in follow
-    return redirect(url_for('user', username))
-TypeError: url_for() takes 1 positional argument but 2 were given
-2023-11-03 00:10:20,773 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
-2023-11-03 20:47:28,521 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
-2023-11-03 20:48:15,376 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
-2023-11-03 21:23:28,763 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
-2023-11-03 21:29:25,732 ERROR: Exception on / [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
-Traceback (most recent call last):
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 21, in index
-    if form.validate_on_submit():
-NameError: name 'form' is not defined
-2023-11-03 21:39:32,836 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
-2023-11-03 21:40:17,144 ERROR: Exception on /index [POST] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
-Traceback (most recent call last):
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 22, in index
-    post = Post(body=form.post.date, author=current_user)
-AttributeError: 'TextAreaField' object has no attribute 'date'
-2023-11-03 21:44:12,538 ERROR: Exception on /index [POST] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
-Traceback (most recent call last):
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 22, in index
-    post = Post(body=form.post.date, author=current_user)
-AttributeError: 'TextAreaField' object has no attribute 'date'
-2023-11-03 22:08:31,848 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 39, in explore
+    posts = Post.query.order_by(Post.timestamp.desc()).paginate(
+TypeError: Query.paginate() takes 1 positional argument but 4 were given
+2023-11-04 14:37:57,770 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
