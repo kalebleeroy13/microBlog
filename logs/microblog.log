@@ -14,3 +14,68 @@ Traceback (most recent call last):
     posts = Post.query.order_by(Post.timestamp.desc()).paginate(
 TypeError: Query.paginate() takes 1 positional argument but 4 were given
 2023-11-04 14:37:57,770 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-04 21:42:05,771 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-04 21:43:01,176 ERROR: Exception on /index [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+Traceback (most recent call last):
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 32, in index
+    prev_url = url_for('index', page-posts.prev_num) \
+TypeError: url_for() takes 1 positional argument but 2 were given
+2023-11-05 18:34:46,027 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-05 18:34:59,756 ERROR: Exception on /index [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+Traceback (most recent call last):
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 32, in index
+    return render_template('index.html', title='Home Page', form=form,
+TypeError: url_for() takes 1 positional argument but 2 were given
+2023-11-05 18:35:10,682 ERROR: Exception on /index [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+Traceback (most recent call last):
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 32, in index
+    return render_template('index.html', title='Home Page', form=form,
+TypeError: url_for() takes 1 positional argument but 2 were given
+2023-11-05 18:36:05,991 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-05 18:36:39,424 ERROR: Exception on /index [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+Traceback (most recent call last):
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 31, in index
+    prev_url = url_for('index', page-posts.prev_num) if posts.has_prev else None
+TypeError: url_for() takes 1 positional argument but 2 were given
+2023-11-05 18:46:05,199 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-05 19:21:09,460 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
