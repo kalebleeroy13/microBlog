@@ -80,3 +80,4 @@ TypeError: url_for() takes 1 positional argument but 2 were given
 2023-11-05 18:46:05,199 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
 2023-11-05 19:21:09,460 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
 2023-11-06 13:52:58,278 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
+2023-11-06 22:48:27,393 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
