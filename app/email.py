@@ -16,7 +16,7 @@ def send_email(subject, sender, recipients, text_body, html_body):
 	Thread(target=send_async_email, args=(app, msg)).start()
 
 
-def send_password_rest_email(user):
+def send_password_reset_email(user):
 	token = user.get_reset_password_token()
 	send_email('[Microblog] Reset Your Passwerd',
 		sender=app.config['ADMINS'][0],
