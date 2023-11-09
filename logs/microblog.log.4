@@ -1,45 +1,5 @@
-2023-11-08 17:58:34,182 ERROR: Exception on /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MSwiZXhwIjoxNjk5NDQxNjA3Ljg1OTAxMzh9.xRG6fBwoEi3p48_vQIj1pFQAaBH9xUeNAnG3VYq31Og [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
-Traceback (most recent call last):
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 114, in reset_password
-    user = User.verify_reset_password_token(token)
-AttributeError: type object 'User' has no attribute 'verify_reset_password_token'
-2023-11-08 20:20:12,465 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
-2023-11-08 20:21:01,541 ERROR: Exception on /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MSwiZXhwIjoxNjk5NDUwMjQwLjAyNjIyN30.Gq2xDxin9qWMfXE7bTrBWMIE033LsuwUCuUWxvE_Di0 [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
-Traceback (most recent call last):
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 114, in reset_password
-    user = User.verify_reset_password_token(token)
-AttributeError: type object 'User' has no attribute 'verify_reset_password_token'
-2023-11-08 21:18:06,544 ERROR: Exception on /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MSwiZXhwIjoxNjk5NDUwMjQwLjAyNjIyN30.Gq2xDxin9qWMfXE7bTrBWMIE033LsuwUCuUWxvE_Di0 [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
-Traceback (most recent call last):
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 114, in reset_password
-    user = User.verify_reset_password_token(token)
-AttributeError: type object 'User' has no attribute 'verify_reset_password_token'
-2023-11-09 18:47:40,062 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
-2023-11-09 18:48:19,244 ERROR: Exception on /user/susan [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+2023-11-03 00:04:36,829 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-03 00:06:15,188 ERROR: Exception on /follow/kale [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
 Traceback (most recent call last):
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
     response = self.full_dispatch_request()
@@ -51,10 +11,14 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
     return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 132, in user
-    posts = user.posts.order_by(post.timestamp.desc()).paginate(
-NameError: name 'post' is not defined
-2023-11-09 18:51:42,795 ERROR: Exception on /user/susan [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 112, in follow
+    return redirect(url_for('user', username))
+TypeError: url_for() takes 1 positional argument but 2 were given
+2023-11-03 00:10:20,773 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-03 20:47:28,521 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-03 20:48:15,376 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-03 21:23:28,763 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-03 21:29:25,732 ERROR: Exception on / [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
 Traceback (most recent call last):
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
     response = self.full_dispatch_request()
@@ -66,11 +30,11 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
     return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 132, in user
-    posts = user.posts.order_by(post.timestamp.desc()).paginate(
-NameError: name 'post' is not defined
-2023-11-09 18:52:12,923 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
-2023-11-09 18:52:32,529 ERROR: Exception on /user/susan [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 21, in index
+    if form.validate_on_submit():
+NameError: name 'form' is not defined
+2023-11-03 21:39:32,836 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-03 21:40:17,144 ERROR: Exception on /index [POST] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
 Traceback (most recent call last):
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
     response = self.full_dispatch_request()
@@ -82,11 +46,10 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
     return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 132, in user
-    posts = user.posts.order_by(posts.timestamp.desc()).paginate(
-UnboundLocalError: local variable 'posts' referenced before assignment
-2023-11-09 18:53:47,126 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
-2023-11-09 18:54:04,555 ERROR: Exception on /user/susan [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 22, in index
+    post = Post(body=form.post.date, author=current_user)
+AttributeError: 'TextAreaField' object has no attribute 'date'
+2023-11-03 21:44:12,538 ERROR: Exception on /index [POST] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
 Traceback (most recent call last):
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
     response = self.full_dispatch_request()
@@ -98,8 +61,43 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
     return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 132, in user
-    posts = user.posts.order_by(Post.timestamp.desc()).paginate(
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 22, in index
+    post = Post(body=form.post.date, author=current_user)
+AttributeError: 'TextAreaField' object has no attribute 'date'
+2023-11-03 22:08:31,848 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-04 13:26:55,212 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-04 13:27:29,895 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-04 13:59:58,542 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-04 14:26:10,004 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-04 14:26:28,855 ERROR: Exception on / [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+Traceback (most recent call last):
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 28, in index
+    posts = current_user.followed_posts().paginate(
 TypeError: Query.paginate() takes 1 positional argument but 4 were given
-2023-11-09 18:55:09,389 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
-2023-11-09 18:55:25,700 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
+2023-11-04 14:31:45,233 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]
+2023-11-04 14:31:57,371 ERROR: Exception on / [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+Traceback (most recent call last):
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 28, in index
+    posts = current_user.followed_posts().paginate(
+TypeError: Query.paginate() takes 1 positional argument but 4 were given
+2023-11-04 14:35:06,234 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:43]

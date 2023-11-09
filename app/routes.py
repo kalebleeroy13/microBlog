@@ -65,7 +65,7 @@ def login():
 			return redirect(url_for('login'))
 		login_user(user, remember=form.remember_me.data)
 		next_page = request.args.get('next')
-		if not next_page or not next_page.startswith('/'):
+		if not next_page or url_parse(next_page).netloc != '':
 			next_page = url_for('index')
 		return redirect(next_page)
 	return render_template('login.html', title='Sign In', form=form)
@@ -101,7 +101,7 @@ def reset_password_request():
 		user = User.query.filter_by(email=form.email.data).first()
 		if user:
 			send_password_reset_email(user)
-		flash('Check your email for the instrucctions to reset your password')
+		flash('Check your email for the instructions to reset your password')
 		return redirect(url_for('login'))
 	return render_template('reset_password_request.html',
 				title='Reset Password', form=form)
@@ -120,7 +120,7 @@ def reset_password(token):
 		db.session.commit()
 		flash('Your password has been reset.')
 		return redirect(url_for('login'))
-	return render_template('reset_password.html', form=form) 
+	return render_template('reset_password.html', form=form)
 
 
 @app.route('/user/<username>')
@@ -128,8 +128,8 @@ def reset_password(token):
 def user(username):
 	user = User.query.filter_by(username=username).first_or_404()
 	page = request.args.get('page', 1, type=int)
-	posts = user.posts.order_by(post.timestamp.desc()).paginate(
-		page, app.config['POSTS_PER_PAGE'], False)
+	posts = user.posts.order_by(Post.timestamp.desc()).paginate(
+        page=page, per_page=app.config['POSTS_PER_PAGE'], error_out=False)
 	next_url = url_for('index', page=posts.next_num) \
 		if posts.has_next else None
 	prev_url = url_for('index', page=posts.prev_num) \

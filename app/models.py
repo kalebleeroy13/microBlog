@@ -14,6 +14,7 @@ followers = db.Table(
 )
 
 
+
 class User(UserMixin, db.Model):
 	id = db.Column(db.Integer, primary_key=True)
 	username = db.Column(db.String(64), index=True, unique=True)
@@ -27,7 +28,6 @@ class User(UserMixin, db.Model):
         primaryjoin=(followers.c.follower_id == id),
         secondaryjoin=(followers.c.followed_id == id),
         backref=db.backref('followers', lazy='dynamic'), lazy='dynamic')
-
 
 	def __repr__(self):
 		return '<User {}>'.format(self.username)
@@ -68,7 +68,7 @@ class User(UserMixin, db.Model):
 			app.config['SECRET_KEY'], algorithm='HS256')
 
 	@staticmethod
-	def verify_rest_password_token(token):
+	def verify_reset_password_token(token):
 		try:
 			id = jwt.decode(token, app.config['SECRET_KEY'],
 							algorithms=['HS256'])['reset_password']
