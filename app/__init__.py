@@ -51,14 +51,10 @@ if not app.debug:
     app.logger.setLevel(logging.INFO)
     app.logger.info('Microblog startup')
 
-babel = Babel()
 
-def determine_locale():
-    if 'language' in session:
-        return session['language']
-    return request.accept_languages.best_match(['en', 'es'])
+def get_locale():
+    babel = Babel(app, locale_selector=get_locale,)
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
 
-babel.init_app(app)
-babel.locale_selector_func = determine_locale
 
 from app import routes, models, errors
