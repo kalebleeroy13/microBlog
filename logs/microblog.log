@@ -64,3 +64,4 @@ jinja2.exceptions.UndefinedError: 'jinja2.environment.TemplateModule object' has
 2023-12-03 19:22:43,958 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
 2023-12-03 19:26:33,885 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
 2023-12-03 20:22:19,769 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-05 20:32:45,571 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
