@@ -1,5 +1,5 @@
-import os 
-import click 
+import os
+import click
 from app import app
 
 
@@ -12,11 +12,11 @@ def translate():
 @translate.command()
 @click.argument('lang')
 def init(lang):
-    """Intialize a new language."""
-    if os.system('pybabel extract -F babel.cfg -k _l -o message.pot .'):
+    """Initialize a new language."""
+    if os.system('pybabel extract -F babel.cfg -k _l -o messages.pot .'):
         raise RuntimeError('extract command failed')
     if os.system(
-        'pybabel init-i messages.pot -d appp/translations -l' + lang):
+            'pybabel init -i messages.pot -d app/translations -l ' + lang):
         raise RuntimeError('init command failed')
     os.remove('messages.pot')
 
@@ -32,7 +32,7 @@ def update():
 
 
 @translate.command()
-def compiled():
-    """compile all languages."""
+def compile():
+    """Compile all languages."""
     if os.system('pybabel compile -d app/translations'):
         raise RuntimeError('compile command failed')
