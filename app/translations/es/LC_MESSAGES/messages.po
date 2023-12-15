@@ -7,140 +7,149 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-11-30 16:42+0700\n"
-"PO-Revision-Date: 2023-12-01 15:02+0700\n"
-"Last-Translator: \n"
-"Language-Team: es <LL@li.org>\n"
+"POT-Creation-Date: 2023-12-15 18:21+0700\n"
+"PO-Revision-Date: 2023-12-15 18:01+0700\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.13.1\n"
-"X-Generator: Poedit 3.4.1\n"
 
-#: app/__init__.py:20
+#: app/__init__.py:24
 msgid "Please log in to access this page."
-msgstr "Inicie sesión para acceder a esta página."
+msgstr "Inicia sesión para acceder a esta página."
 
 #: app/email.py:22
 msgid "[Microblog] Reset Your Password"
 msgstr "[Microblog] Restablece tu contraseña"
 
-#: app/forms.py:11 app/forms.py:18 app/forms.py:51
+#: app/forms.py:13 app/forms.py:20 app/forms.py:55
 msgid "Username"
-msgstr "nombre de usuario"
+msgstr "Nombre de usuario"
 
-#: app/forms.py:12 app/forms.py:20 app/forms.py:43
+#: app/forms.py:14 app/forms.py:22 app/forms.py:47
 msgid "Password"
 msgstr "Contraseña"
 
-#: app/forms.py:13
+#: app/forms.py:15
 msgid "Remember Me"
 msgstr "Recuérdame"
 
-#: app/forms.py:14 app/routes.py:73 app/templates/login.html:5
+#: app/forms.py:16 app/routes.py:84 app/templates/login.html:5
 msgid "Sign In"
 msgstr "Iniciar sesión"
 
-#: app/forms.py:19 app/forms.py:38
+#: app/forms.py:21 app/forms.py:42
 msgid "Email"
 msgstr "correo electrónico"
 
-#: app/forms.py:22 app/forms.py:45
+#: app/forms.py:24 app/forms.py:49
 msgid "Repeat Password"
 msgstr "Repetir contraseña"
 
-#: app/forms.py:24 app/routes.py:94 app/templates/register.html:5
+#: app/forms.py:26 app/routes.py:105 app/templates/register.html:5
 msgid "Register"
 msgstr "Registrarse"
 
-#: app/forms.py:29 app/forms.py:64
+#: app/forms.py:32 app/forms.py:69
 msgid "Please use a different username."
 msgstr "Utilice un nombre de usuario diferente."
 
-#: app/forms.py:34
+#: app/forms.py:38
 msgid "Please use a different email address."
 msgstr "Utilice una dirección de correo electrónico diferente."
 
-#: app/forms.py:39 app/forms.py:47
+#: app/forms.py:43 app/forms.py:51
 msgid "Request Password Reset"
 msgstr "Solicitar restablecimiento de contraseña"
 
-#: app/forms.py:52
+#: app/forms.py:56
 msgid "About me"
 msgstr "Sobre mi"
 
-#: app/forms.py:54 app/forms.py:72
+#: app/forms.py:58 app/forms.py:77
 msgid "Submit"
 msgstr "Enviar"
 
-#: app/forms.py:71
+#: app/forms.py:76
 msgid "Say something"
 msgstr "di algo"
 
-#: app/routes.py:30
+#: app/routes.py:38
 msgid "Your post is now live!"
 msgstr "¡Tu publicación ya está disponible!"
 
-#: app/routes.py:39 app/templates/base.html:21
+#: app/routes.py:47 app/templates/base.html:27
 msgid "Home"
-msgstr "Casa"
+msgstr "Inicio"
 
-#: app/routes.py:54 app/templates/base.html:22
+#: app/routes.py:63 app/templates/base.html:30
 msgid "Explore"
 msgstr "Explorar"
 
-#: app/routes.py:66
+#: app/routes.py:77
 msgid "Invalid username or password"
 msgstr "Nombre de usuario o contraseña no válidos"
 
-#: app/routes.py:92
+#: app/routes.py:103
 msgid "Congratulations, you are now a registered user!"
-msgstr "¡Felicitaciones, ya eres un usuario registrado!"
+msgstr "¡Felicitaciones, ahora eres un usuario registrado!"
 
-#: app/routes.py:107
+#: app/routes.py:119
 msgid "Check your email for the instructions to reset your password"
-msgstr "Revisa tu correo electrónico para obtener instrucciones para restablecer tu contraseña"
+msgstr ""
+"Revisa tu correo electrónico para obtener instrucciones para restablecer "
+"tu contraseña"
 
-#: app/routes.py:110 app/templates/reset_password.html:5
+#: app/routes.py:122 app/templates/reset_password_request.html:5
 msgid "Reset Password"
 msgstr "Restablecer contraseña"
 
-#: app/routes.py:124
+#: app/routes.py:136
 msgid "Your password has been reset."
 msgstr "Tu contraseña ha sido restablecida."
 
-#: app/routes.py:153
+#: app/routes.py:167
 msgid "Your changes have been saved."
 msgstr "Tus cambios han sido guardados."
 
-#: app/routes.py:169 app/routes.py:189
+#: app/routes.py:184 app/routes.py:205
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Usuario %(nombre de usuario) no encontrado."
 
-#: app/routes.py:172
+#: app/routes.py:187
 msgid "You cannot follow yourself!"
 msgstr "¡No puedes seguirte a ti mismo!"
 
-#: app/routes.py:176
+#: app/routes.py:191
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "¡Estás siguiendo a %(username)s!"
 
-#: app/routes.py:192
+#: app/routes.py:208
 msgid "You cannot unfollow yourself!"
 msgstr "¡No puedes dejar de seguirte!"
 
-#: app/routes.py:196
+#: app/routes.py:212
 #, python-format
 msgid "You are not following %(username)s."
 msgstr "No estás siguiendo a %(username)s."
 
+#: app/translate.py:9
+msgid "Error: the translation service is not configured."
+msgstr "Error: el servicio de traducción no está configurado."
+
+#: app/translate.py:20
+msgid "Error: the translation service failed."
+msgstr "Error: falló el servicio de traducción."
+
 #: app/templates/404.html:4
-msgid "File Not Found"
-msgstr "Archivo no encontrado"
+msgid "Not Found"
+msgstr "No encontrado"
 
 #: app/templates/404.html:5 app/templates/500.html:6
 msgid "Back"
@@ -159,21 +168,25 @@ msgstr "El administrador ha sido notificado. "
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s dijo %(when)s"
 
-#: app/templates/base.html:4
+#: app/templates/_post.html:25
+msgid "Translate"
+msgstr "Traducir"
+
+#: app/templates/base.html:9
 msgid "Welcome to Microblog"
 msgstr "Bienvenido al microblog"
 
-#: app/templates/base.html:26
+#: app/templates/base.html:36
 msgid "Login"
 msgstr "Iniciar sesión"
 
-#: app/templates/base.html:28
+#: app/templates/base.html:40
 msgid "Profile"
 msgstr "Perfil"
 
-#: app/templates/base.html:29
+#: app/templates/base.html:43
 msgid "Logout"
-msgstr "Cerrar sesión"
+msgstr "cerrar sesión"
 
 #: app/templates/edit_profile.html:5
 msgid "Edit Profile"
@@ -184,31 +197,31 @@ msgstr "Editar perfil"
 msgid "Hi, %(username)s!"
 msgstr "¡Hola, %(nombre de usuario)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:41
+#: app/templates/index.html:16 app/templates/user.html:41
 msgid "Newer posts"
 msgstr "publicaciones más recientes"
 
-#: app/templates/index.html:22 app/templates/user.html:46
+#: app/templates/index.html:21 app/templates/user.html:46
 msgid "Older posts"
 msgstr "publicaciones más antiguas"
 
-#: app/templates/login.html:12
+#: app/templates/login.html:7
 msgid "New User?"
 msgstr "¿Nuevo usuario?"
 
-#: app/templates/login.html:12
+#: app/templates/login.html:7
 msgid "Click to Register!"
 msgstr "¡Haga clic para registrarse!"
 
-#: app/templates/login.html:14
+#: app/templates/login.html:9
 msgid "Forgot Your Password?"
 msgstr "¿Olvidaste tu contraseña?"
 
-#: app/templates/login.html:15
+#: app/templates/login.html:10
 msgid "Click to Reset It"
 msgstr "Haga clic para restablecerlo"
 
-#: app/templates/reset_password_request.html:5
+#: app/templates/reset_password.html:5
 msgid "Reset Your Password"
 msgstr "Restablece tu contraseña"
 
@@ -241,433 +254,4 @@ msgstr "Seguir"
 #: app/templates/user.html:27
 msgid "Unfollow"
 msgstr "dejar de seguir"
-
-#: venv/lib/python3.10/site-packages/click/_termui_impl.py:518
-msgid "{editor}: Editing failed"
-msgstr "{editor}: Error al editar"
-
-#: venv/lib/python3.10/site-packages/click/_termui_impl.py:522
-msgid "{editor}: Editing failed: {e}"
-msgstr "{editor}: Error al editar: {e}"
-
-#: venv/lib/python3.10/site-packages/click/core.py:1120
-msgid "Aborted!"
-msgstr "¡Abortado!"
-
-#: venv/lib/python3.10/site-packages/click/core.py:1309
-#: venv/lib/python3.10/site-packages/click/decorators.py:559
-msgid "Show this message and exit."
-msgstr "Muestra este mensaje y sal."
-
-#: venv/lib/python3.10/site-packages/click/core.py:1340
-#: venv/lib/python3.10/site-packages/click/core.py:1370
-msgid "(Deprecated) {text}"
-msgstr "(Obsoleto) {texto}"
-
-#: venv/lib/python3.10/site-packages/click/core.py:1387
-msgid "Options"
-msgstr "Opciones"
-
-#: venv/lib/python3.10/site-packages/click/core.py:1415
-msgid "Got unexpected extra argument ({args})"
-msgid_plural "Got unexpected extra arguments ({args})"
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.10/site-packages/click/core.py:1428
-msgid "DeprecationWarning: The command {name!r} is deprecated."
-msgstr "Advertencia de desuso: El comando {nombre!r} está en desuso."
-
-#: venv/lib/python3.10/site-packages/click/core.py:1636
-msgid "Commands"
-msgstr "Comandos"
-
-#: venv/lib/python3.10/site-packages/click/core.py:1668
-msgid "Missing command."
-msgstr "comando faltante."
-
-#: venv/lib/python3.10/site-packages/click/core.py:1746
-msgid "No such command {name!r}."
-msgstr "No existe tal comando {nombre!r}."
-
-#: venv/lib/python3.10/site-packages/click/core.py:2310
-msgid "Value must be an iterable."
-msgstr "El valor debe ser iterable."
-
-#: venv/lib/python3.10/site-packages/click/core.py:2333
-msgid "Takes {nargs} values but 1 was given."
-msgid_plural "Takes {nargs} values but {len} were given."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.10/site-packages/click/core.py:2778
-msgid "env var: {var}"
-msgstr "envvar:{var}"
-
-#: venv/lib/python3.10/site-packages/click/core.py:2808
-msgid "(dynamic)"
-msgstr "(dinámico)"
-
-#: venv/lib/python3.10/site-packages/click/core.py:2821
-msgid "default: {default}"
-msgstr "predeterminado: {predeterminado}"
-
-#: venv/lib/python3.10/site-packages/click/core.py:2834
-msgid "required"
-msgstr "requerido"
-
-#: venv/lib/python3.10/site-packages/click/decorators.py:465
-#, python-format
-msgid "%(prog)s, version %(version)s"
-msgstr "%(prog)s, versión %(versión)s"
-
-#: venv/lib/python3.10/site-packages/click/decorators.py:528
-msgid "Show the version and exit."
-msgstr "Mostrar la versión y salir."
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:44
-#: venv/lib/python3.10/site-packages/click/exceptions.py:80
-msgid "Error: {message}"
-msgstr "Error: {mensaje}"
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:72
-msgid "Try '{command} {option}' for help."
-msgstr "Pruebe '{command} {option}' para obtener ayuda."
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:121
-msgid "Invalid value: {message}"
-msgstr "Valor no válido: {mensaje}"
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:123
-msgid "Invalid value for {param_hint}: {message}"
-msgstr "Valor no válido para {param_hint}: {mensaje}"
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:179
-msgid "Missing argument"
-msgstr "argumento faltante"
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:181
-msgid "Missing option"
-msgstr "opción faltante"
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:183
-msgid "Missing parameter"
-msgstr "Parámetro faltante"
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:185
-msgid "Missing {param_type}"
-msgstr "Falta {param_type}"
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:192
-msgid "Missing parameter: {param_name}"
-msgstr "Parámetro faltante: {param_name}"
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:212
-msgid "No such option: {name}"
-msgstr "No existe esa opción: {nombre}"
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:226
-msgid "Did you mean {possibility}?"
-msgid_plural "(Possible options: {possibilities})"
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:262
-msgid "unknown error"
-msgstr "error desconocido"
-
-#: venv/lib/python3.10/site-packages/click/exceptions.py:269
-msgid "Could not open file {filename!r}: {message}"
-msgstr "No se pudo abrir el archivo {nombre de archivo! r}: {mensaje}"
-
-#: venv/lib/python3.10/site-packages/click/parser.py:231
-msgid "Argument {name!r} takes {nargs} values."
-msgstr "El argumento {nombre!r} toma valores de {nargs}."
-
-#: venv/lib/python3.10/site-packages/click/parser.py:413
-msgid "Option {name!r} does not take a value."
-msgstr "La opción {nombre!r} no toma valor."
-
-#: venv/lib/python3.10/site-packages/click/parser.py:473
-msgid "Option {name!r} requires an argument."
-msgid_plural "Option {name!r} requires {nargs} arguments."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.10/site-packages/click/shell_completion.py:318
-msgid "Shell completion is not supported for Bash versions older than 4.4."
-msgstr "La finalización de Shell no es compatible con versiones de Bash anteriores a 4.4."
-
-#: venv/lib/python3.10/site-packages/click/shell_completion.py:326
-msgid "Couldn't detect Bash version, shell completion is not supported."
-msgstr "No se pudo detectar la versión de Bash, no se admite la finalización del shell."
-
-#: venv/lib/python3.10/site-packages/click/termui.py:158
-msgid "Repeat for confirmation"
-msgstr "Repetir para confirmar"
-
-#: venv/lib/python3.10/site-packages/click/termui.py:174
-msgid "Error: The value you entered was invalid."
-msgstr "Error: El valor ingresado no es válido."
-
-#: venv/lib/python3.10/site-packages/click/termui.py:176
-msgid "Error: {e.message}"
-msgstr "Error: {e.mensaje}"
-
-#: venv/lib/python3.10/site-packages/click/termui.py:187
-msgid "Error: The two entered values do not match."
-msgstr "Error: Los dos valores ingresados ​​no coinciden."
-
-#: venv/lib/python3.10/site-packages/click/termui.py:243
-msgid "Error: invalid input"
-msgstr "Error: entrada no válida"
-
-#: venv/lib/python3.10/site-packages/click/termui.py:773
-msgid "Press any key to continue..."
-msgstr "Presiona cualquier tecla para continuar..."
-
-#: venv/lib/python3.10/site-packages/click/types.py:266
-msgid ""
-"Choose from:\n"
-"\t{choices}"
-msgstr "Elija entre:\n\t{opciones}"
-
-#: venv/lib/python3.10/site-packages/click/types.py:300
-msgid "{value!r} is not {choice}."
-msgid_plural "{value!r} is not one of {choices}."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.10/site-packages/click/types.py:394
-msgid "{value!r} does not match the format {format}."
-msgid_plural "{value!r} does not match the formats {formats}."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.10/site-packages/click/types.py:414
-msgid "{value!r} is not a valid {number_type}."
-msgstr "{valor!r} no es un {número_tipo} válido."
-
-#: venv/lib/python3.10/site-packages/click/types.py:470
-msgid "{value} is not in the range {range}."
-msgstr "{valor} no está en el rango {rango}."
-
-#: venv/lib/python3.10/site-packages/click/types.py:611
-msgid "{value!r} is not a valid boolean."
-msgstr "{value!r} no es un booleano válido."
-
-#: venv/lib/python3.10/site-packages/click/types.py:635
-msgid "{value!r} is not a valid UUID."
-msgstr "{value!r} no es un UUID válido."
-
-#: venv/lib/python3.10/site-packages/click/types.py:822
-msgid "file"
-msgstr "archivo"
-
-#: venv/lib/python3.10/site-packages/click/types.py:824
-msgid "directory"
-msgstr "directorio"
-
-#: venv/lib/python3.10/site-packages/click/types.py:826
-msgid "path"
-msgstr "camino"
-
-#: venv/lib/python3.10/site-packages/click/types.py:877
-msgid "{name} {filename!r} does not exist."
-msgstr "{nombre} {nombre de archivo!r} no existe."
-
-#: venv/lib/python3.10/site-packages/click/types.py:886
-msgid "{name} {filename!r} is a file."
-msgstr "{nombre} {nombre de archivo!r} es un archivo."
-
-#: venv/lib/python3.10/site-packages/click/types.py:894
-msgid "{name} '{filename}' is a directory."
-msgstr "{nombre} '{nombre de archivo}' es un directorio."
-
-#: venv/lib/python3.10/site-packages/click/types.py:903
-msgid "{name} {filename!r} is not readable."
-msgstr "{nombre} {nombre de archivo!r} no es legible."
-
-#: venv/lib/python3.10/site-packages/click/types.py:912
-msgid "{name} {filename!r} is not writable."
-msgstr "{nombre} {nombre de archivo!r} no se puede escribir."
-
-#: venv/lib/python3.10/site-packages/click/types.py:921
-msgid "{name} {filename!r} is not executable."
-msgstr "{nombre} {nombre de archivo!r} no es ejecutable."
-
-#: venv/lib/python3.10/site-packages/click/types.py:987
-msgid "{len_type} values are required, but {len_value} was given."
-msgid_plural "{len_type} values are required, but {len_value} were given."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.10/site-packages/flask_wtf/file.py:35
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:294
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:322
-msgid "This field is required."
-msgstr "Este campo es obligatorio."
-
-#: venv/lib/python3.10/site-packages/flask_wtf/file.py:69
-msgid "File does not have an approved extension: {extensions}"
-msgstr "El archivo no tiene una extensión aprobada: {extensiones}"
-
-#: venv/lib/python3.10/site-packages/flask_wtf/file.py:77
-msgid "File does not have an approved extension."
-msgstr "El archivo no tiene una extensión aprobada."
-
-#: venv/lib/python3.10/site-packages/flask_wtf/file.py:112
-msgid "File must be between {min_size} and {max_size} bytes."
-msgstr "El archivo debe tener entre {min_size} y {max_size} bytes."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:87
-#, python-format
-msgid "Invalid field name '%s'."
-msgstr "Nombre de campo no válido '%s'."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:100
-#, python-format
-msgid "Field must be equal to %(other_name)s."
-msgstr "El campo debe ser igual a %(other_name)s."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:146
-#, python-format
-msgid "Field must be at least %(min)d character long."
-msgid_plural "Field must be at least %(min)d characters long."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:152
-#, python-format
-msgid "Field cannot be longer than %(max)d character."
-msgid_plural "Field cannot be longer than %(max)d characters."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:158
-#, python-format
-msgid "Field must be exactly %(max)d character long."
-msgid_plural "Field must be exactly %(max)d characters long."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:164
-#, python-format
-msgid "Field must be between %(min)d and %(max)d characters long."
-msgstr "El campo debe tener entre %(min)d y %(max)d caracteres de longitud."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:217
-#, python-format
-msgid "Number must be at least %(min)s."
-msgstr "El número debe ser al menos %(min)s."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:220
-#, python-format
-msgid "Number must be at most %(max)s."
-msgstr "El número debe ser como máximo %(max)s."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:223
-#, python-format
-msgid "Number must be between %(min)s and %(max)s."
-msgstr "El número debe estar entre %(min)s y %(max)s."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:357
-msgid "Invalid input."
-msgstr "Entrada no válida."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:416
-msgid "Invalid email address."
-msgstr "Dirección de correo electrónico no válida."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:454
-msgid "Invalid IP address."
-msgstr "Dirección IP no válida."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:497
-msgid "Invalid Mac address."
-msgstr "Dirección Mac no válida."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:532
-msgid "Invalid URL."
-msgstr "URL no válida."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:553
-msgid "Invalid UUID."
-msgstr "UUID no válido."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:586
-#, python-format
-msgid "Invalid value, must be one of: %(values)s."
-msgstr "Valor no válido, debe ser uno de: %(values)s."
-
-#: venv/lib/python3.10/site-packages/wtforms/validators.py:621
-#, python-format
-msgid "Invalid value, can't be any of: %(values)s."
-msgstr "Valor no válido, no puede ser ninguno de: %(values)s."
-
-#: venv/lib/python3.10/site-packages/wtforms/csrf/core.py:96
-msgid "Invalid CSRF Token."
-msgstr "Token CSRF no válido."
-
-#: venv/lib/python3.10/site-packages/wtforms/csrf/session.py:63
-msgid "CSRF token missing."
-msgstr "Falta el token CSRF."
-
-#: venv/lib/python3.10/site-packages/wtforms/csrf/session.py:71
-msgid "CSRF failed."
-msgstr "CSRF falló."
-
-#: venv/lib/python3.10/site-packages/wtforms/csrf/session.py:76
-msgid "CSRF token expired."
-msgstr "El token CSRF expiró."
-
-#: venv/lib/python3.10/site-packages/wtforms/fields/choices.py:132
-msgid "Invalid Choice: could not coerce."
-msgstr "Elección no válida: no se pudo coaccionar."
-
-#: venv/lib/python3.10/site-packages/wtforms/fields/choices.py:136
-#: venv/lib/python3.10/site-packages/wtforms/fields/choices.py:188
-msgid "Choices cannot be None."
-msgstr "Las opciones no pueden ser Ninguna."
-
-#: venv/lib/python3.10/site-packages/wtforms/fields/choices.py:145
-msgid "Not a valid choice."
-msgstr "No es una elección válida."
-
-#: venv/lib/python3.10/site-packages/wtforms/fields/choices.py:181
-msgid "Invalid choice(s): one or more data inputs could not be coerced."
-msgstr "Elección(es) no válida(s): una o más entradas de datos no se pudieron forzar."
-
-#: venv/lib/python3.10/site-packages/wtforms/fields/choices.py:200
-#, python-format
-msgid "'%(value)s' is not a valid choice for this field."
-msgid_plural "'%(value)s' are not valid choices for this field."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/lib/python3.10/site-packages/wtforms/fields/datetime.py:50
-msgid "Not a valid datetime value."
-msgstr "No es un valor de fecha y hora válido."
-
-#: venv/lib/python3.10/site-packages/wtforms/fields/datetime.py:76
-msgid "Not a valid date value."
-msgstr "No es un valor de fecha válido."
-
-#: venv/lib/python3.10/site-packages/wtforms/fields/datetime.py:102
-msgid "Not a valid time value."
-msgstr "No es un valor de tiempo válido."
-
-#: venv/lib/python3.10/site-packages/wtforms/fields/numeric.py:82
-#: venv/lib/python3.10/site-packages/wtforms/fields/numeric.py:92
-msgid "Not a valid integer value."
-msgstr "No es un valor entero válido."
-
-#: venv/lib/python3.10/site-packages/wtforms/fields/numeric.py:167
-msgid "Not a valid decimal value."
-msgstr "No es un valor decimal válido."
-
-#: venv/lib/python3.10/site-packages/wtforms/fields/numeric.py:196
-msgid "Not a valid float value."
-msgstr "No es un valor flotante válido."
-
 
