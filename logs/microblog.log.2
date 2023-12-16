@@ -1,4 +1,4 @@
-2023-11-09 20:17:51,932 ERROR: Exception on /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MSwiZXhwIjoxNjk5NTM2NDM5LjQxNjg5N30.JS0pqDCAxr4ypvWY-QnvZvLXxhlGB_xuZXY_o--LR-E [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+2023-11-11 15:06:00,655 ERROR: Exception on / [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
 Traceback (most recent call last):
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
     response = self.full_dispatch_request()
@@ -8,8 +8,10 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 123, in reset_password
-    return render_template('reset_password.html', form=form)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 37, in index
+    return render_template('index.html', title='Home', form=form,
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
     template = app.jinja_env.get_or_select_template(template_name_or_list)
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
@@ -24,11 +26,19 @@ Traceback (most recent call last):
     self.handle_exception(source=source_hint)
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
     raise rewrite_traceback_stack(source=source)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/reset_password.html", line 10, in template
-    {% for error in form.password.errors $}
-jinja2.exceptions.TemplateSyntaxError: unexpected char '$' at 250
-2023-11-09 22:12:33,249 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
-2023-11-09 22:15:09,580 ERROR: Exception on /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MSwiZXhwIjoxNjk5NTQzMzc5LjQ1NjgyMn0.6DDESVgohkK9cMXILE4IPWHcanTr5nOS1z60Pj2_5rc [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/index.html", line 11, in template
+    {% include '_post.html' %}
+jinja2.exceptions.TemplateSyntaxError: expected token 'as', got '_post'
+2023-11-11 15:17:37,636 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:47]
+2023-11-11 16:38:07,333 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:47]
+2023-11-11 16:42:30,737 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:47]
+2023-11-11 19:08:37,444 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
+2023-11-11 22:34:02,400 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
+2023-11-11 22:40:22,883 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
+2023-11-11 23:04:52,945 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
+2023-11-11 23:10:50,391 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
+2023-11-11 23:27:24,057 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
+2023-11-11 23:28:20,273 ERROR: Exception on /edit_profile [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
 Traceback (most recent call last):
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
     response = self.full_dispatch_request()
@@ -38,8 +48,10 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 123, in reset_password
-    return render_template('reset_password.html', form=form)
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 155, in edit_profile
+    return render_template('edit_profile.html', title='Edit Profile',
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
     return _render(app, template, context)
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
@@ -48,46 +60,22 @@ Traceback (most recent call last):
     self.environment.handle_exception()
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
     raise rewrite_traceback_stack(source=source)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/reset_password.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/base.html", line 32, in top-level template code
-    {% block content %}{% endblock %}
-  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/reset_password.html", line 16, in block 'content'
-    {{ form.password2(size32) }}<br>
-TypeError: Field.__call__() takes 1 positional argument but 2 were given
-2023-11-09 22:53:48,460 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
-2023-11-09 22:54:57,015 ERROR: Exception on /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MSwiZXhwIjoxNjk5NTQ1ODc4LjQ0NDc2OX0.ksSzNRhrsV6fa600reHt0sZ6R7zBhAf5PPbmxkScZFE [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
-Traceback (most recent call last):
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 123, in reset_password
-    return render_template('reset_password.html', form=form)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
-    return _render(app, template, context)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
-    rv = template.render(context)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
-    self.environment.handle_exception()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/reset_password.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/base.html", line 32, in top-level template code
-    {% block content %}{% endblock %}
-  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/reset_password.html", line 17, in block 'content'
-    {% for error in form.pasword2.errors %}
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 485, in getattr
-    return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: 'app.forms.ResetPasswordForm object' has no attribute 'pasword2'
-2023-11-09 23:03:08,971 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
-2023-11-09 23:43:35,659 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:45]
-2023-11-11 12:22:41,899 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:47]
-2023-11-11 12:28:31,409 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:47]
-2023-11-11 12:35:27,675 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:47]
-2023-11-11 15:02:16,762 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:47]
+  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/edit_profile.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block 'html'
+    {% block body -%}
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block 'body'
+    {% block content -%}
+  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/base.html", line 48, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/edit_profile.html", line 8, in block 'app_content'
+    {{wtf.wuick_form(form)}}
+  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: 'jinja2.environment.TemplateModule object' has no attribute 'wuick_form'

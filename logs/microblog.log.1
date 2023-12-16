@@ -1,44 +1,4 @@
-2023-11-11 15:06:00,655 ERROR: Exception on / [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
-Traceback (most recent call last):
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/routes.py", line 37, in index
-    return render_template('index.html', title='Home', form=form,
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
-    template = app.jinja_env.get_or_select_template(template_name_or_list)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
-    return self.get_template(template_name_or_list, parent, globals)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
-    return self._load_template(name, globals)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
-    template = self.loader.load(self, name, self.make_globals(globals))
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
-    code = environment.compile(source, name, filename)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 768, in compile
-    self.handle_exception(source=source_hint)
-  File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "/Users/panther13/Desktop/codespace/microBlog/app/templates/index.html", line 11, in template
-    {% include '_post.html' %}
-jinja2.exceptions.TemplateSyntaxError: expected token 'as', got '_post'
-2023-11-11 15:17:37,636 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:47]
-2023-11-11 16:38:07,333 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:47]
-2023-11-11 16:42:30,737 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:47]
-2023-11-11 19:08:37,444 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
-2023-11-11 22:34:02,400 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
-2023-11-11 22:40:22,883 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
-2023-11-11 23:04:52,945 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
-2023-11-11 23:10:50,391 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
-2023-11-11 23:27:24,057 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
-2023-11-11 23:28:20,273 ERROR: Exception on /edit_profile [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
+2023-11-11 23:51:14,464 ERROR: Exception on /edit_profile [GET] [in /Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py:1414]
 Traceback (most recent call last):
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
     response = self.full_dispatch_request()
@@ -75,7 +35,63 @@ Traceback (most recent call last):
   File "/Users/panther13/Desktop/codespace/microBlog/app/templates/base.html", line 48, in block 'content'
     {% block app_content %}{% endblock %}
   File "/Users/panther13/Desktop/codespace/microBlog/app/templates/edit_profile.html", line 8, in block 'app_content'
-    {{wtf.wuick_form(form)}}
+    {{wtf.quick_form(form)}}
   File "/Users/panther13/Desktop/codespace/microBlog/venv/lib/python3.10/site-packages/jinja2/utils.py", line 83, in from_obj
     if hasattr(obj, "jinja_pass_arg"):
 jinja2.exceptions.UndefinedError: 'jinja2.environment.TemplateModule object' has no attribute 'wuick_form'
+2023-11-11 23:52:47,203 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:49]
+2023-11-13 10:09:08,302 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-13 10:11:32,435 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-13 10:13:01,291 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:53]
+2023-11-13 10:31:59,610 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:53]
+2023-11-13 11:07:30,046 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-13 11:39:51,991 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-13 12:12:20,988 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-25 09:04:21,109 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-27 11:19:15,813 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-27 14:05:10,871 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-27 14:05:18,092 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-27 14:36:55,489 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-27 14:37:03,794 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-27 16:04:43,275 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-27 18:32:36,523 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-27 20:55:22,070 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-28 12:23:07,904 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-28 12:24:31,470 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-11-29 18:09:39,826 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-02 10:56:26,300 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-03 19:13:13,369 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-03 19:22:43,958 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-03 19:26:33,885 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-03 20:22:19,769 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-05 20:32:45,571 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-07 12:34:38,755 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-07 12:35:46,246 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-07 12:37:26,770 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-07 12:37:43,529 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-08 17:24:49,754 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-08 17:28:00,520 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-08 17:28:59,163 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:52]
+2023-12-12 18:48:53,546 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-12 18:49:16,570 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-12 18:49:34,361 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-12 18:49:40,464 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-12 18:49:55,887 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-12 18:50:33,953 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-12 18:51:02,135 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-12 19:02:11,873 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-12 19:02:27,615 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-12 19:10:17,409 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-12 19:28:30,914 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-13 11:43:09,352 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-13 11:54:47,109 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-15 13:04:03,287 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-15 15:30:52,391 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-15 15:31:30,655 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-15 16:07:19,728 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-15 16:07:50,744 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-15 16:09:05,578 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-15 18:21:49,326 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-15 18:22:40,721 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-15 18:45:14,392 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
+2023-12-16 11:21:10,268 INFO: Microblog startup [in /Users/panther13/Desktop/codespace/microBlog/app/__init__.py:55]
