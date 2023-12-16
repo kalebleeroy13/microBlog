@@ -19,3 +19,7 @@ def translate(text, source_language, dest_language):
     if r.status_code != 200:
         return _('Error: the translation service failed.')
     return r.json()[0]['translations'][0]['text']
+
+
+
+    
